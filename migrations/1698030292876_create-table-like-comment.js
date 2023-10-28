@@ -26,13 +26,13 @@ exports.up = (pgm) => {
 
   pgm.addConstraint(
     'comment_likes',
-    'fk_comment_likes."threadId"_threads.id',
+    'fk_comment_likes.threadId_threads.id',
     'FOREIGN KEY("threadId") REFERENCES threads(id) ON DELETE CASCADE',
   );
 
   pgm.addConstraint(
     'comment_likes',
-    'fk_comment_likes."commentId"_comments.id',
+    'fk_comment_likes.commentId_comments.id',
     'FOREIGN KEY("commentId") REFERENCES comments(id) ON DELETE CASCADE',
   );
 
