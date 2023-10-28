@@ -43,14 +43,14 @@ jobs:
         env:
           CI: true
           PGHOST_TEST: localhost
-          PGUSER_TEST: garudagames
+          PGUSER_TEST: postgres
           PGDATABASE_TEST: garudadb_test
-          PGPASSWORD_TEST: garuda12345
+          PGPASSWORD_TEST: postgres
           PGPORT_TEST: 5432
           PGHOST: localhost
-          PGUSER: garudagames
+          PGUSER: postgres
           PGDATABASE: garudadb_test
-          PGPASSWORD: garuda12345
+          PGPASSWORD: postgres
           PGPORT: 5432
           ACCESS_TOKEN_KEY: ${{ secrets.ACCESS_TOKEN_KEY }}
           REFRESH_TOKEN_KEY: ${{ secrets.REFRESH_TOKEN_KEY }}
